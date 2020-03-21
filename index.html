@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta name="description" content="Speech Quiz">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Spyder-code">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+        <link rel="icon" type="image/png" href="assets/img/logo.png">
+        <title>Speech Quiz</title>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/mdb.min.css">
         <!-- <script type = "text/javascript" src = "assets/javascript/speech.js"></script> -->
@@ -18,11 +22,11 @@
                         <div class="col col-12">
                                 <div class="artikel">
                                         <div class="btn-group-vertical bg-light" style="margin-top:200px;width: 300px; border-radius: 18px;">
-                                                <button class="btn btn-danger animated pulse infinite slow mt-3 ml-5" style="width: 210px;">HEWAN</button>
-                                                <button class="btn btn-warning  animated pulse infinite slow delay-1s mt-2 ml-5" style="width: 210px;">BUAH</button>
-                                                <button class="btn btn-success animated pulse infinite slow delay-2s mt-2 ml-5" style="width: 210px;">PROFESI</button>
-                                                <button class="btn btn-info animated pulse infinite slow delay-3s mt-2 ml-5" style="width: 210px;">KENDARAAN</button>
-                                                <button class="btn btn-secondary animated pulse infinite slow delay-4s mt-2 mb-3 ml-5" style="width: 210px;">ANGKA ARAB</button>
+                                                <a href="hewan.html" class="btn btn-danger animated pulse infinite slow mt-3 ml-5" style="width: 210px;">HEWAN</a>
+                                                <a href="buah.html" class="btn btn-warning  animated pulse infinite slow delay-1s mt-2 ml-5" style="width: 210px;">BUAH</a>
+                                                <a href="profesi.html" class="btn btn-success animated pulse infinite slow delay-2s mt-2 ml-5" style="width: 210px;">PROFESI</a>
+                                                <a href="kendaraan.html" class="btn btn-info animated pulse infinite slow delay-3s mt-2 ml-5" style="width: 210px;">KENDARAAN</a>
+                                                <a href="angka.html" class="btn btn-secondary animated pulse infinite slow delay-4s mt-2 mb-3 ml-5" style="width: 210px;">ANGKA ARAB</a>
                                         </div>
                                 </div>
                         </div>
@@ -30,7 +34,7 @@
         </div>
 
 
-<script>
+<!-- <script>
         var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
 recognition.lang = "id-ID";
 recognition.interimResults = true;
@@ -59,7 +63,7 @@ recognition.continuous = false;
         
         };
         setTimeout(function(){ location.reload() }, 15000);
-</script>
+</script> -->
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="assets/javascript/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
