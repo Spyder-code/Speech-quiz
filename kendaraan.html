@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <script src="assets/javascript/popper.min.js"></script>
+        <script src="assets/javascript/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script type = "text/javascript" src = "assets/javascript/speech.js"></script>
+</head>
+<body  style="background-image: url('assets/img/background/bg-kendaraan.jpg'); background-size: cover;">
+        <audio id="ply" hidden autoplay>
+                <source src="assets/Sound/bg.ogg" type="audio/ogg">
+        </audio>
+        <div id="wrapper">
+                <div class="container-fluid text-center mt-5" >
+                        <div class="row" style="color:red">
+                            <div class="col">
+                                <h1 id="prew">Score : <div id="score"></div></h1>
+                            </div>
+                            <div class="col">
+                                <h1 id="pref">Time : <div id="time"></div></h1>
+                            </div>
+                        </div>
+                        <div class="row text-center" id="cd">
+                                <div class="col" style="color:black;">
+                                        <h1 style="font-size: 200pt;"><div id="countdown">5</div></h1>
+                                </div>
+                        </div>
+                    </div>
+
+                <div class="container text-center">
+                        <div class="row" style="margin-top: 40px;">
+                                <div class="col">
+                                        <div id="subwrapper" style="font-size: 50pt; color:black;">
+        
+                                        </div>
+                                        <div id="aplause"></div>
+
+                                        <div id="images"></div>
+                                        <div id="inp" class="mt-2"></div>
+                                </div>
+                        </div>
+                </div>
+        
+        
+                <!-- <div class="card" style="width: 30em;margin:0 auto;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p id=cardText class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <     
+                        </div>
+                </div> -->
+        
+               
+        <script>
+                var vid = document.getElementById("ply").volume=0.1;
+                        var seconds = document.getElementById("countdown").textContent;
+                        var countdown = setInterval(function () {
+                                seconds--;
+                                document.getElementById("countdown").textContent = seconds;
+                                if (seconds <= 0) clearInterval(countdown);
+                        }, 1000);
+                setTimeout(function(){ game.loadQuestion() }, 5000);
+        </script>
+
+        <script type = "text/javascript" src = "assets/javascript/kendaraan.js"></script>
+        
+        </div>
+</body>
+</html>
