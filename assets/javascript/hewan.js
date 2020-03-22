@@ -77,7 +77,7 @@ var game = {
         // $('#subwrapper').append('<h1>'+questions[game.currentQuestion].question+'</h1>');
         $('#score').html('<h1>'+game.correct*20+'</h1>');
         $('#images').html('<img src="'+questions[game.currentQuestion].image+'">');
-        $('#inp').html('<form id="form"> <input type="text" id="jawab" class="form-control text-center"></form>');
+        $('#inp').html('<form id="form"> <input type="text" id="jawab" class="form-control text-center" onkeypress="return false;"></form>');
         $('#jawab').focus();
     },
     nextQuestion: function(){
@@ -109,7 +109,8 @@ var game = {
         $('#pref').remove();
         $('#subwrapper').html('<h2>Complete!</h2>')
         $('#subwrapper').append(" Your Score " +game.correct*20+ '<br/>');
-        $('#aplause').html('<img src="assets/img/minion.gif">');
+        $('#aplause').html('<img src="assets/img/minion.gif" id="complete">');
+        document.getElementById("player").play();
         setTimeout(function(){ window.location = "index.html" }, 10000);
     },
 
